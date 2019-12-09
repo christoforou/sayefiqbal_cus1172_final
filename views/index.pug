@@ -1,0 +1,73 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Course Search
+        script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"  crossorigin="anonymous")
+        style
+            include ../styles/index.css
+        script
+            include ../client.js
+
+
+    body
+        div(class="row")
+
+            div(class="col-2")
+
+                div(id="nav")
+                   
+                    img(src="https://mycslab.s3.amazonaws.com/panda.png" id="logo")
+                    br
+                    br
+                    input(class="search-bar m-2" id="title-value" placeholder="Title" aria-label="Search" )
+                    //- button(class="btn btn-primary m-2" id="title") Search By Title
+                    
+                    input(class="search-bar m-2" id="name-value" placeholder="Name" aria-label="Search" )
+                    //- button(class="btn btn-primary m-2" id="name") Search By Name
+                    
+                    input(class="search-bar m-2" id="instructor-value" placeholder="Instructor" aria-label="Search")
+                    //- button(class="btn btn-primary m-2" id="instructor") Search By Instructor
+                    
+                    button(class="btn btn-primary m-2" id="advance") Search
+                    
+                    div(class="dropdown")
+                        button(class="btn btn-primary m-2 dropdown-toggle" type="button" id="dropdownMenuButtonForSchedule" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Schedule
+                        div(class="dropdown-menu" aria-labelledby="dropdownMenuButtonForSchedule")
+                            a(class="dropdown-item" id="monday" data-day="Monday") Monday
+                            a(class="dropdown-item" id="tuesday" data-day="Tuesday") Tuesday
+                            a(class="dropdown-item" id="wednesday" data-day="Wednesday") Wednesday
+                            a(class="dropdown-item" id="thursday" data-day="Thursday") Thursday
+                            a(class="dropdown-item" id="friday" data-day="Friday") Friday
+                            a(class="dropdown-item" id="saturday" data-day="Saturday") Saturday
+
+
+                    div(class="dropdown")
+                        button(class="btn btn-primary m-2 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Lecture Type
+                        div(class="dropdown-menu" aria-labelledby="dropdownMenuButton")
+                            a(class="dropdown-item" id="lecture" ) Lecture
+                            a(class="dropdown-item" id="lab" ) Lab/Lecture
+                            a(class="dropdown-item" id="hybrid") Hybrid
+
+                    button(class="btn btn-success m-2" id="seats") Seats Available
+
+                    button(class="btn btn-danger m-2" id="clear" ) Clear Search
+
+            div(class="col-10")
+                table(class="table table-hover")
+                    thead
+                        tr
+                            th(class="table-head" scope="col") Title
+                            th(class="table-head" scope="col") Course
+                            th(class="table-head" scope="col") Schedule
+                            th(class="table-head" scope="col") Instructor
+                            th(class="table-head" scope="col") Credits
+                            th(class="table-head" scope="col") Lecture
+                            th(class="table-head" scope="col") Seats
+                    tbody(id="result")
+                       
+            

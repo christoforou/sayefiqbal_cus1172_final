@@ -1,0 +1,45 @@
+.search-bar{
+    width: 200px;
+    height: 40px;
+    background-color: E6E6E6;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+  
+}
+
+.btn{
+    width: 200px;
+    background-color: #00264d;
+    color: #E6E6E6;
+    border: none;
+}
+
+#nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.dropdown-menu{
+    cursor: pointer;
+}
+
+.table-head{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: whitesmoke;
+    color:  #00264d;
+    border: none;
+}
+
+p{
+    margin: 0px;
+}
+
+#logo{
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 35px;
+}
