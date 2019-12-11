@@ -59,7 +59,7 @@ This api endpoint only returns the course json objects which have seats open.
 ### Usage
 
 ##### 1. Run the application using ```node app.js``` while on the root folder
-   Then open up ```127.0.0.1:3000/``` on your favourite browser.
+   Then open up ```127.0.0.1:3000``` on your favourite browser.
 
 ![GitHub Logo](/github_images/run.PNG)
  
