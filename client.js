@@ -72,8 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-//////////////////////////////////////////////////
-
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#monday").onclick = () => {
     clear()
@@ -232,10 +230,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#clear").onclick = () => {
-    // document.querySelector("#result").innerHTML = ""; // this works
-    // document.querySelector("#title-value").value = "";
-    // document.querySelector("#name-value").value = "";
-    // document.querySelector("#instructor-value").value = "";
     clear()
     document.querySelector("#dropdownMenuButton").innerHTML = "Lecture Type";
     document.querySelector("#dropdownMenuButtonForSchedule").innerHTML =

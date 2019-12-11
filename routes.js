@@ -1,76 +1,9 @@
 let express = require("express");
 let sampleData = require("./sampleData");
-let pug = require("pug");
 
 let data = sampleData.module;
 
 let router = express.Router();
-
-router.get("/", function(req, res) {
-  // pass parameter here
-  console.log(data.module);
-  res.send(data);
-});
-
-router.get("/courses/qByTitle/",function(req,res){
-  res.send([])
-});
-
-router.get("/courses/qByName/",function(req,res){
-  res.send([])
-});
-
-router.get("/courses/qByInstructor/",function(req,res){
-  res.send([])
-});
-
-
-
-//search by course_title
-router.get("/courses/qByTitle/:query", function(req, res) {
-  query = req.params["query"].toLowerCase();
-  console.log(query);
-  sendData = [];
-  data.map(subject => {
-    subject.courses.map(course => {
-      if (course.title.toLowerCase().includes(query)) {
-        sendData.push(course);
-      }
-    });
-  });
-  res.json(sendData);
-  // res.render('index',sendData)
-});
-
-//search by course_name
-router.get("/courses/qByName/:query", function(req, res) {
-  query = req.params["query"].toLowerCase();
-  console.log(query);
-  sendData = [];
-  data.map(subject => {
-    subject.courses.map(course => {
-      if (course.name.toLowerCase().includes(query)) {
-        sendData.push(course);
-      }
-    });
-  });
-  res.json(sendData);
-});
-
-//search by course_instructor
-router.get("/courses/qByInstructor/:query", function(req, res) {
-  query = req.params["query"].toLowerCase();
-  console.log(query);
-  sendData = [];
-  data.map(subject => {
-    subject.courses.map(course => {
-      if (course.instructor.toLowerCase().includes(query)) {
-        sendData.push(course);
-      }
-    });
-  });
-  res.json(sendData);
-});
 
 //search by lecture_type
 router.get("/courses/qByLectureType/:query", function(req, res) {
@@ -180,7 +113,7 @@ router.get("/courses/qByTitle/:queryTitle/qByName/:queryName/qByInstructor/:quer
     });
   });
   res.json(sendData);
-  // res.render('index',sendData)
+
 });
 
 

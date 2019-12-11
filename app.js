@@ -1,18 +1,19 @@
 let express = require('express');
 let routes = require('./routes');
-const path = require('path');
 
 
 let pug = require("pug");
 
 let app = express();
 
-
+// configuring Pug as the template negine for this app
 app.set('view engine','pug')
 
+// registering routes
 app.use('/',routes);
-// 
-app.get('/home',function(req,res){
+
+// Landing Page
+app.get('/',function(req,res){
     res.render('index');
 })
 // Start a server
