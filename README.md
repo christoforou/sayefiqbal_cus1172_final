@@ -25,3 +25,7 @@ Course Search Page
 3. Searching by title
 
 ![GitHub Logo](/github_images/search1.PNG)
+
+4. Filtered search
+
+![GitHub Logo](/github_images/filter1.PNG)
