@@ -12,5 +12,7 @@ Course Search Page
 #### Step 2
 
 ### Usage
-![GitHub Logo](https://upload.wikimedia.org/wikipedia/commons/0/0f/Grosser_Panda.JPG)
-Format: ![Alt Text](url)
+
+Run the application using ```node app.js``` while on the root folder
+![GitHub Logo](/github_images/run.PNG)
+ 
