@@ -75,7 +75,7 @@ This api endpoint only returns the course json objects which have seats open.
 
 ![GitHub Logo](/github_images/filter1.PNG)
 
-##### 5. Dropdown searh 
+##### 5. Dropdown search 
 
 ![GitHub Logo](/github_images/dropdown-search.PNG)
 
