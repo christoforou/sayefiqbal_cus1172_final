@@ -8,7 +8,15 @@ Course Search Page
 * Packages
 * APIs
 
-### Download & Installation
+### Download
+
+Find the code in ``` https://github.com/sayefiqb/sayefiqbal_cus1172_final``` repository.
+Download the code
+
+![GitHub Logo](/github_images/download1.PNG)
+
+
+### Installation
 
 #### Step 1
 #### Step 2
