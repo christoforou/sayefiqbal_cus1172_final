@@ -13,6 +13,10 @@ Course Search Page
 
 ### Usage
 
-Run the application using ```node app.js``` while on the root folder
+1. Run the application using ```node app.js``` while on the root folder
+
 ![GitHub Logo](/github_images/run.PNG)
  
+2. Home page
+
+![GitHub Logo](/github_images/home1.PNG)
