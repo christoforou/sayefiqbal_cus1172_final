@@ -2,9 +2,11 @@
 Course Search Page
 
 ## Overview
-* Download & Installation
+* Download 
+* Installation
 * Usage
-* Routes
+* Packages
+* APIs
 
 ### Download & Installation
 
