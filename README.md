@@ -43,22 +43,22 @@ For better code design use **Routes**. It helps to register all your routes unde
 
 The backend consists of several APIs created using Express and Routes. The data for this project is stored in the sampleData.js file which returns a list of course objects. You can use a database instead and return data as model objects to your javascript file and pass it to your template. Howevrer, for simplicity I used a static sample data file. The following routes are registered using Routes
 
-```http://127.0.0.1:3000/courses/qByTitle/:queryTitle/qByName/:queryName/qByInstructor/:queryInstructor```
+```http://127.0.0.1:3000/courses/qByTitle/:queryTitle/qByName/:queryName/qByInstructor/:queryInstructor``` \
 This api endpoint takes the **course title**, **course name** and **instructor name** as possible parameters and then returns filterd search result. You can pass either one, all or none of the parameters. In case of no parameters passed, the api edpoint will return all the json objects from sample dat afile as results.
 
-```http://127.0.0.1:3000/courses/qByLectureType/:query``` 
+```http://127.0.0.1:3000/courses/qByLectureType/:query``` \
 This api endpoint returns course json objects based on the type of **lecture** passed as the parameter. The options for this project are lecture, lab and hybrid.
 
-```http://127.0.0.1:3000/courses/qBySchedule/:query```
+```http://127.0.0.1:3000/courses/qBySchedule/:query``` \
 This api returns course json objects based on the **day** of schedule passed as parameter.
 
-```http://127.0.0.1:3000/courses/qBySeats```
+```http://127.0.0.1:3000/courses/qBySeats``` \
 This api endpoint only returns the course json objects which have seats open.
 
 
 ### Usage
 
-##### 1. Run the application using ```node app.js``` while on the root folder \\
+##### 1. Run the application using ```node app.js``` while on the root folder \
    Then open up ```127.0.0.1:3000/home``` on your favourite browser.
 
 ![GitHub Logo](/github_images/run.PNG)
