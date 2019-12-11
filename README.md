@@ -20,3 +20,7 @@ Course Search Page
 2. Home page
 
 ![GitHub Logo](/github_images/home1.PNG)
+
+3. Searching by title
+
+![GitHub Logo](/github_images/search1.PNG)
