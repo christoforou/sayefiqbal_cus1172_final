@@ -4,9 +4,12 @@ Course Search Page
 ## Overview
 * Download 
 * Installation
-* Usage
-* Packages
+   * Node
+   * Express
+   * Routes
+   * Pug (Template Engine)
 * APIs
+* Usage
 
 ### Download
 
@@ -18,8 +21,27 @@ Download the code
 
 ### Installation
 
-#### Step 1
-#### Step 2
+##### Node
+
+Install Node.js on your machine from ```https://nodejs.org/en/```.
+
+##### Express
+
+Install **Express** using ``` npm install express ```.
+
+##### Routes
+
+For better code design use **Routes**. It helps to register all your routes under a single Routes object. Install Routes using 
+``` npm install routes ```.
+
+##### Pug
+
+**Pug** is a template engine used to maintain static template files in your application. At runtime, the template engine replaces variables in a template file with actual values passed as parameters from your javascript files, and transforms the template into an HTML file sent to the client which is rendered in the browser. It also keeps your code clean. **You must keep your name.pug files in a views folder**. Install **Pug** in your machine using npm ``` npm install pug```.
+
+
+### APIs
+
+The backend consists of several APIs created using Express and Routes. The data for this project is stored in the sampleData.js file which returns a list of course objects. You can use a database instead and return data as model objects to your javascript file and pass it to your template. Howevrer, for simplicity I used a static sample data file. 
 
 ### Usage
 
