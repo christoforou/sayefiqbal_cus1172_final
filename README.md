@@ -23,7 +23,7 @@ Download the code
 
 #### Node
 
-Install **Node.js** on your machine from [GitHub](https://nodejs.org/en/).
+Install **Node.js** on your machine from [Node](https://nodejs.org/en/).
 
 #### Express
 
