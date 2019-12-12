@@ -1,0 +1,37 @@
+
+@media(max-width: 375px){
+    .search-bar {
+        /* margin-left: 35px;
+        margin-right: 35px; */
+        width: 365px;
+        height: 60px;
+        background-color: E6E6E6;
+        border: none;
+        border-radius: 2px;
+        text-align: center;
+    }
+
+    .btn{
+        width: 365px;
+        height: 60px;
+        /* margin-left: 35px;
+        margin-right: 35px; */
+        background-color: #00264d;
+        color: #E6E6E6;
+        border: none;`
+    }
+
+    #table-div{
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+
+    #nav{
+        margin-left: 80px;
+    }
+
+    #logo{
+        margin-left: 1px;
+    }
+
+}
